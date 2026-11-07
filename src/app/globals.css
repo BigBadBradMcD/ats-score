@@ -23,3 +23,12 @@
     @apply w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition;
   }
 }
+
+/* iOS Safari zooms on focus below 16px */
+@media (pointer: coarse) {
+  textarea,
+  input[type="text"],
+  input[type="email"] {
+    font-size: 16px;
+  }
+}
